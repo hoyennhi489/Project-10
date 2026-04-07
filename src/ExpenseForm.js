@@ -7,10 +7,12 @@ function ExpenseForm({ addExpense }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!title || !amount) return;
+
     const newExpense = {
       id: Date.now(),
       title,
-      amount: amount,
+      amount: Number(amount),
     };
 
     addExpense(newExpense);
