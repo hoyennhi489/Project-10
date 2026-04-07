@@ -1,0 +1,14 @@
+.app {
+  text-align: center;
+  margin-top: 40px;
+  font-family: Arial;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+}
+
+button {
+  margin-left: 5px;
+}
