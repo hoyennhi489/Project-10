@@ -19,3 +19,23 @@ From this task, I learned:
 * Small mistakes in data types can cause major logic errors
 
 After fixing these issues, the total calculation worked correctly.
+
+---
+
+### Learning Journal – Day 2 (Fixing List Rendering Bug)
+
+Today, I focused on fixing an issue in the Expense Tracker related to how the list of expenses was rendered.
+
+Previously, I used the array index as the key when rendering the list. This caused problems when deleting items, as the UI did not update correctly and sometimes displayed incorrect data.
+
+After reviewing the issue, I learned that using index as a key is not reliable because it can change when items are added or removed.
+
+To fix this, I replaced the index with a unique id for each expense item. This ensures that each element has a stable identity, allowing React to render updates correctly.
+
+From this task, I learned:
+
+* Why keys are important in React lists
+* The difference between stable and unstable keys
+* How incorrect keys can lead to UI bugs
+
+After making this change, the list behaves correctly when adding or deleting items.
