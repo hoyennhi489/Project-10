@@ -39,3 +39,23 @@ From this task, I learned:
 * How incorrect keys can lead to UI bugs
 
 After making this change, the list behaves correctly when adding or deleting items.
+
+---
+
+### Learning Journal – Day 3 (Adding Persistence)
+
+Today, I enhanced the Expense Tracker by adding data persistence using localStorage.
+
+Previously, all expenses were lost when the page was refreshed. This made the application less useful in real-world scenarios.
+
+To solve this, I implemented localStorage to save and load expense data.
+
+I initialized the state by reading from localStorage and used useEffect to update storage whenever the expense list changed.
+
+From this task, I learned:
+
+* How to persist data in the browser
+* How to use useEffect for side effects
+* How to make an application more practical
+
+After this improvement, the app can now retain data even after refreshing the page.
